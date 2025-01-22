@@ -3,4 +3,8 @@
     <string name="app_name">НМедиа</string>
     <string name="nmedia">НМедиа!</string>
     <string name="user_avatar">Аватар пользователя</string>
+    <string name="menu_button">Кнопка меню</string>
+    <string name="likes_icon">Иконка лайков</string>
+    <string name="shared_icon">Иконка "поделились"</string>
+    <string name="views_icon">Иконка "просмотры"</string>
 </resources>

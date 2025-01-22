@@ -2,4 +2,8 @@
     <string name="app_name">NMedia</string>
     <string name="nmedia">NMedia!</string>
     <string name="user_avatar">User avatar</string>
+    <string name="menu_button">Menu button</string>
+    <string name="likes_icon">Likes icon</string>
+    <string name="shared_icon">Shared icon</string>
+    <string name="views_icon">Views icon</string>
 </resources>
