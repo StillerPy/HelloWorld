@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/avatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/avatarSize"
+        android:layout_height="@dimen/avatarSize"
         android:layout_marginStart="@dimen/regular_margin"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/regular_margin"
         android:contentDescription="@string/user_avatar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,9 +26,9 @@
         android:layout_marginStart="@dimen/regular_margin"
         android:ellipsize="end"
         android:singleLine="true"
+        app:layout_constraintEnd_toStartOf="@id/menu"
         app:layout_constraintStart_toEndOf="@+id/avatar"
         app:layout_constraintTop_toTopOf="@+id/avatar"
-        app:layout_constraintEnd_toStartOf="@id/menu"
         tools:text="@sample/posts.json/data/author" />
 
     <ImageView
@@ -41,8 +41,7 @@
         app:layout_constraintTop_toTopOf="@id/avatar"
         android:contentDescription="@string/menu_button"
         app:layout_goneMarginEnd="@dimen/regular_margin"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="319dp" />
+ />
 
     <TextView
         android:id="@+id/published"
@@ -84,22 +83,21 @@
         />
 
     <ImageView
-        android:id="@+id/likes_icon"
+        android:id="@+id/like_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/like_icon"
-        app:layout_constraintTop_toBottomOf="@id/footer_barrier"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="@dimen/regular_margin"
         android:contentDescription="@string/likes_icon"
-         />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/footer_barrier"
+        app:srcCompat="@drawable/ic_like" />
 
     <TextView
         android:id="@+id/likes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/footer_barrier"
-        app:layout_constraintStart_toEndOf="@id/likes_icon"
+        app:layout_constraintStart_toEndOf="@id/like_button"
         tools:text="@sample/posts.json/data/likes"
         android:layout_marginStart="@dimen/regular_margin"
         />
@@ -152,6 +150,6 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#c0c0c0"
-        app:layout_constraintTop_toBottomOf="@id/likes_icon"/>
+        app:layout_constraintTop_toBottomOf="@id/like_button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
