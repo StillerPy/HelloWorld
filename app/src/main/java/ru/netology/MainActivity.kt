@@ -19,6 +19,14 @@ class MainActivity : AppCompatActivity() {
         //binding.author.text = "Author"
         setContentView(binding.root)
         applyInset(binding.main)
+        binding.root.setOnClickListener {
+            post = post.copy(content = post.content + "\nRoot clicked")
+            updatePost(binding)
+        }
+        binding.avatar.setOnClickListener {
+            post = post.copy(content = post.content + "\nAvatar clicked")
+            updatePost(binding)
+        }
         binding.menu.setOnClickListener {
             val n = if (Random.nextInt(2) > 0) {
                 Random.nextInt(1_000_000_000)

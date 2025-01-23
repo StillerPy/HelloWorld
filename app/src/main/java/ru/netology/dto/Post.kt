@@ -16,7 +16,7 @@ data class Post(
     val author: String = "=== Post author ===",
     val published: String = "=== Publishing date ===",
     val content: String = "=== Content text ===",
-    var likes: Int = 0,
+    var likes: Int = 1099,
     var shared: Int = 999,
     var views: Int = 12345,
     var likedByMe: Boolean = false,
